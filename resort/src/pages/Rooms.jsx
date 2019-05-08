@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Room = () => {
+const Rooms = () => {
   return (
     <div>
       Room Page
@@ -8,4 +8,4 @@ const Room = () => {
   )
 }
 
-export default Room
+export default Rooms

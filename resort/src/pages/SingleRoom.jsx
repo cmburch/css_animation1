@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class SingleRoom extends Component {
+class SingleRoom extends Component {
   render() {
     return (
       <div>
@@ -9,3 +9,5 @@ export default class SingleRoom extends Component {
     )
   }
 }
+
+export default SingleRoom
