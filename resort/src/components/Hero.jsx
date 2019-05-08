@@ -7,3 +7,8 @@ const Hero = ({ children, hero }) => {
 }
 
 export default Hero
+
+// this is the default css class named defaultHero
+Hero.defaultProps = {
+    hero: "defaultHero"
+  };
