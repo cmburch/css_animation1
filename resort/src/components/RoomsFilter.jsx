@@ -116,6 +116,30 @@ const RoomsFilter = ({ rooms }) => {
           </div>
         </div>
         {/* end of size type */}
+
+                {/* extras */}
+        <div className="form-group">
+          <div className="single-extra">
+            <input
+              type="checkbox"
+              name="breakfast"
+              id="breakfast"
+              checked={breakfast}
+              onChange={handleChange}
+            />
+            <label htmlFor="breakfast">breakfast</label>
+          </div>
+          <div className="single-extra">
+            <input
+              type="checkbox"
+              name="pets"
+              checked={pets}
+              onChange={handleChange}
+            />
+            <label htmlFor="breakfast">pets</label>
+          </div>
+        </div>
+        {/* end of extras type */}
       </form>
     </section>
   );
