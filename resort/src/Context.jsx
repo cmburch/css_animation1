@@ -61,16 +61,18 @@ class RoomProvider extends Component {
       handleChange = event => {
         //method is used for filitering rooms
         const target = event.target;
+        //value is what is selected
         const value = target.type === "checkbox" ? target.checked : target.value;
         const name = target.name;
+        //console name = 'type'  value ='the selected value' 
         console.log(name, value);
     
-        // this.setState(
-        //   {
-        //     [name]: value
-        //   },
-        //   this.filterRooms
-        // );
+        this.setState(
+          {
+            [name]: value
+          },
+          this.filterRooms
+        );
       };
 
     filterRooms = () => {
